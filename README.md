@@ -11,3 +11,12 @@
 
 🎊Congretulation now you can use My extention! 🎊
 
+#### Some Picks
+
+- If you don't have any bookmarks
+
+![first](<Screenshot from 2024-09-03 02-04-40.png>)
+
+- If you have some.... 
+
+![Second](<Screenshot from 2024-09-03 02-04-53.png>)
