@@ -1,0 +1,89 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    margin: 0;
+    padding: 15px;
+    width: 320px;
+    box-sizing: border-box;
+  }
+  
+  /* Heading Styling */
+  h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  /* Main Button Styling */
+  button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #43e97b, #38f9d7);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Button Hover Effect */
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Bookmark List Styling */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  /* Individual List Item Styling */
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Link Styling */
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95em;
+    font-weight: bold;
+  }
+  
+  /* Link Hover Effect */
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Remove Button Styling */
+  button.remove {
+    background: linear-gradient(135deg, #ff4e50, #f9d423);
+    color: white;
+    padding: 5px 12px;
+    font-size: 0.85em;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Remove Button Hover Effect */
+  button.remove:hover {
+    transform: scale(1.05);
+  }
+  

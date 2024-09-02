@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Bookmark_karo",
+    "version": "1.0",
+    "description": "Save and navigate to specific timestamps in YouTube videos.",
+    "permissions": ["tabs", "storage", "activeTab", "scripting"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "star.png",
+        "48": "star.png",
+        "128": "star.png"
+      }
+    },
+    "icons": {
+      "16": "star.png",
+      "48": "star.png",
+      "128": "star.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
