@@ -4,7 +4,7 @@
 
 ### Steps
 
-- `git clone` 
+- `git clone https://github.com/Himanshu-Saraswat-01122004/BookaMark_karo.git` 
 - Open your browser's extention settings
 - Enable Developer Mode
 - Load the extension 
