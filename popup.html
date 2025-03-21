@@ -5,11 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookmark Karo</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <h2>Bookmark Karo</h2>
-    <button id="saveBtn">Save Timestamp</button>
-    <ul id="bookmarksList"></ul>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-bookmark"></i> Bookmark Karo</h1>
+        </header>
+        
+        <div class="input-section">
+            <input type="text" id="noteInput" placeholder="Add a note (optional)">
+            <button id="saveBtn" class="primary-btn">
+                <i class="fas fa-clock"></i> Save Timestamp
+            </button>
+        </div>
+
+        <div class="bookmarks-section">
+            <div class="section-header">
+                <h2>Your Bookmarks</h2>
+                <div class="filter-controls">
+                    <button id="sortByDate" class="icon-btn" title="Sort by date">
+                        <i class="fas fa-calendar"></i>
+                    </button>
+                    <button id="sortByTitle" class="icon-btn" title="Sort by title">
+                        <i class="fas fa-sort-alpha-down"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="bookmarksList" class="bookmarks-list"></div>
+        </div>
+
+        <div class="empty-state" id="emptyState">
+            <i class="fas fa-bookmark"></i>
+            <p>No bookmarks yet. Start by saving a timestamp!</p>
+        </div>
+
+        <div class="toast" id="toast"></div>
+    </div>
     <script src="popup.js"></script>
 </body>
 </html>
